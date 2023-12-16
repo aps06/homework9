@@ -7,13 +7,10 @@ def input_error(func):
             func()
         except KeyError:
             print('Enter user name')
-            inner()
         except ValueError:
             print("Wrong value")
-            inner()
         except IndexError:
             print("Give me name and phone please")
-            inner()
     return inner
 
 
