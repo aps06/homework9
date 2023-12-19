@@ -74,8 +74,8 @@ def main():
                     print(b)
         elif c in ['hello',  'good bye', 'close', 'exit']:
             a = COMANDS[c]()
+            print(a)
             if a == 'Good bye':
-                print(a)
                 break
         else:
             print('wrong comand')
