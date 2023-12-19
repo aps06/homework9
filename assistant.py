@@ -34,7 +34,10 @@ def change(contacts, inputs):
         raise ValueError
 @input_error
 def phone(contacts, inputs):
+    if len(inputs.split()) > 2:
+        raise ValueError
     return contacts[inputs.split()[1]]
+    
 @input_error
 def show_all(contacts):
     contacts_string = ''
